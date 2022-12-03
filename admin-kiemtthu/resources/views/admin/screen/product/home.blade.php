@@ -50,7 +50,7 @@
                                                 <th>SKU</th>
                                                 <th>Tên sản phẩm</th>
                                                 <th>Giá</th>
-                                                <th>Giảm giá %</th>
+                                                <th>Tồn kho</th>
                                                 <th>Loại sản phẩm</th>
                                                 <th>Ảnh sản phẩm</th>
                                                 <th>Thời gian tạo</th>
@@ -68,7 +68,7 @@
                                                     <td>{{ $item->SKU }}</td>
                                                     <td>{{ $item->Name }}</td>
                                                     <td>{{ $item->Price }}</td>
-                                                    <td>{{ $item->Stock }} %</td>
+                                                    <td>{{ $item->Stock }} </td>
                                                     <td>{{ $item->productType->Name }}</td>
                                                     <td style="background-size: 200px;width:200px; height:200px; background-image:url('Avatar/{{ $item->Image }}');"></td>
                                                     <td>{{ $item->created_at }}</td>
