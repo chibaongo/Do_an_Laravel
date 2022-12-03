@@ -15,7 +15,7 @@ class ProductSeeder extends Seeder
      */
     public function run()
     {
-        $max = 10;
+        $max = 5;
         for ($i = 1; $i <= $max; $i++) {
             DB::table('products')->insert([
                 'SKU' => 'SKU ' . Str::random(10),

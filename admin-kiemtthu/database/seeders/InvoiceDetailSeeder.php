@@ -14,7 +14,7 @@ class InvoiceDetailSeeder extends Seeder
      */
     public function run()
     {
-        $max = 10;
+        $max = 5;
         for ($i = 1; $i < $max; $i++) {
             DB::table('invoice_details')->insert([
                 'ProductId' => $i,

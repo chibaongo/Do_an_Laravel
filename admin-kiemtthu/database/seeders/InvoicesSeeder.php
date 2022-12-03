@@ -14,7 +14,7 @@ class InvoicesSeeder extends Seeder
      */
     public function run()
     {
-        $max =10;
+        $max =5;
         for ($i = 1; $i <= $max; $i++) {
             DB::table('invoices')->insert([
                 'Code' =>  Str::random(10),
