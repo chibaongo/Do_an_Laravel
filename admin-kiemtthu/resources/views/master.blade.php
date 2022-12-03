@@ -35,13 +35,13 @@
 					<div class="col-sm-6">
 						<div class="contactinfo">
 							<ul class="nav nav-pills">
-								<li><a ><i class="fa fa-phone"></i> +2 95 01 88 821</a></li>
-								<li><a ><i class="fa fa-envelope"></i> nguyenminhhieu@gmail.com</a></li>
+								{{-- <li><a ><i class="fa fa-phone"></i> +2 95 01 88 821</a></li>
+								<li><a ><i class="fa fa-envelope"></i> nguyenminhhieu@gmail.com</a></li> --}}
 							</ul>
 						</div>
 					</div>
 					<div class="col-sm-6">
-						<div class="social-icons pull-right">
+						{{-- <div class="social-icons pull-right">
 							<ul class="nav navbar-nav">
 								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -49,7 +49,7 @@
 								<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
 								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
 							</ul>
-						</div>
+						</div> --}}
 					</div>
 				</div>
 			</div>
@@ -63,7 +63,7 @@
 							<a href="{{url("/")}}"><img src="user/images/home/logo.png" alt="" /></a>
 						</div>
 						<div class="btn-group pull-right clearfix">
-							<div class="btn-group">
+							{{-- <div class="btn-group">
 								<button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
 									USA
 									<span class="caret"></span>
@@ -72,9 +72,9 @@
 									<li><a href="">Canada</a></li>
 									<li><a href="">UK</a></li>
 								</ul>
-							</div>
+							</div> --}}
 
-							<div class="btn-group">
+							{{-- <div class="btn-group">
 								<button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
 									DOLLAR
 									<span class="caret"></span>
@@ -83,7 +83,7 @@
 									<li><a href="">Canadian Dollar</a></li>
 									<li><a href="">Pound</a></li>
 								</ul>
-							</div>
+							</div> --}}
 						</div>
 					</div>
 					<div class="col-md-8 clearfix">
@@ -93,7 +93,7 @@
                                 @if (!empty($userLoginDetail))
                                     <li><a href="{{url('/detail-user') }}"><i class="fa fa-user"></i> {{$userLoginDetail->Username}}</a></li>
                                     <li><a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart</a></li>
-                                    <li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Contact</a></li>
+                                    {{-- <li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Contact</a></li> --}}
                                     <li><a href="{{url('logout')}}"><i class="fa fa-lock"></i> Logout</a></li>
                                 @else
                                      <li><a href="{{url('login')}}"><i class="fa fa-lock"></i> Login</a></li>
@@ -119,9 +119,9 @@
 						</div>
 						<div class="mainmenu pull-left">
 							<ul class="nav navbar-nav collapse navbar-collapse">
-								<li><a href="index.html" class="active">Home</a></li>
+								<li><a href="{{url("/")}}" class="active">Home</a></li>
 								<li class="dropdown"><a href="#">Shop<i class="fa fa-angle-down"></i></a>
-                                    <ul role="menu" class="sub-menu">
+                                   	 <ul role="menu" class="sub-menu">
                                         <li><a href="shop.html">Products</a></li>
 										<li><a href="product-details.html">Product Details</a></li>
 										<li><a href="checkout.html">Checkout</a></li>
@@ -129,14 +129,14 @@
 										<li><a href="login.html">Login</a></li>
                                     </ul>
                                 </li>
-								<li class="dropdown"><a href="#">Blog<i class="fa fa-angle-down"></i></a>
+								{{-- <li class="dropdown"><a href="#">Blog<i class="fa fa-angle-down"></i></a>
                                     <ul role="menu" class="sub-menu">
                                         <li><a href="blog.html">Blog List</a></li>
 										<li><a href="blog-single.html">Blog Single</a></li>
                                     </ul>
                                 </li>
 								<li><a href="404.html">404</a></li>
-								<li><a href="contact-us.html">Contact</a></li>
+								<li><a href="contact-us.html">Contact</a></li> --}}
 							</ul>
 						</div>
 					</div>
@@ -153,7 +153,7 @@
                             <div style="display: flex;flex-direction: column;justify-content: space-between;">
                                 <div style="display: flex; margin-left: 10px;justify-content: space-around;">
                                     <p style="margin: 10px;">Giá</p>
-                                    <input type="range" id="priceSearch" name="price" value="0" min="0" max="100000000" oninput="this.nextElementSibling.value = this.value">
+                                    <input type="range" id="priceSearch" name="price" value="0" min="0" max="1000000" oninput="this.nextElementSibling.value = this.value">
                                     <output id="valRangeShow">0</output>
                                 </div>
                                 <div class="search_box pull-right"  style="margin-left: 10px;">
@@ -168,8 +168,9 @@
 		</div><!--/header-bottom-->
 	</header><!--/header-->
 
-    @yield("context")
 
+	
+    @yield("context")
 	<footer id="footer"><!--Footer-->
 		<div class="footer-top">
 			<div class="container">
