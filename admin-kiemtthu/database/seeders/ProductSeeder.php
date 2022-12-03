@@ -25,6 +25,8 @@ class ProductSeeder extends Seeder
                 'Stock' =>  random_int(1,100),
                 'ProductTypeId' => $i,
                 'Image' => $i.".png",
+                'Image1' => $i.".png",
+                'Image2' => $i.".png",
             ]);
         }
     }
