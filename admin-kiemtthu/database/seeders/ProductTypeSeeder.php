@@ -15,7 +15,7 @@ class ProductTypeSeeder extends Seeder
      */
     public function run()
     {
-        $max = 20;
+        $max = 10;
         for ($i = 1; $i <= $max; $i++) {
             DB::table('product_types')->insert([
                 'name' => 'product_types ' .  $i
