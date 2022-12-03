@@ -70,7 +70,7 @@
         <div class="row">
             <div class="col-sm-3">
                 <div class="left-sidebar">
-                    <h2>Category</h2>
+                    {{-- <h2>Category</h2>
                     <div class="panel-group category-products" id="accordian"><!--category-productsr-->
                         @foreach ($productType as $value)
                             <div class="panel panel-default">
@@ -79,7 +79,7 @@
                                 </div>
                             </div>
                         @endforeach
-                    </div><!--/category-products-->
+                    </div><!--/category-products--> --}}
                     <div class="shipping text-center"><!--shipping-->
                         <img src="user/images/home/shipping.jpg" alt="" />
                     </div><!--/shipping-->
