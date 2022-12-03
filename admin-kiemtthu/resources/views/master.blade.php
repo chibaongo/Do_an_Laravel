@@ -121,26 +121,7 @@
 							<ul class="nav navbar-nav collapse navbar-collapse">
 								<li><a href="{{url("/")}}" class="active">Home</a></li>
 
-								<li class="dropdown"><a href="#">Category<i class="fa fa-angle-down"></i></a>
-									<ul role="menu" class="sub-menu">
-										@foreach ($productType as $value)
-										
-												<li><a href="#">{{ $value->Name ?? '' }}</a></li>
-										
-									@endforeach
-								</ul>
 							</li>
-
-							{{-- <h2>Category</h2>
-                    <div class="panel-group category-products" id="accordian"><!--category-productsr-->
-                        @foreach ($productType as $value)
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title"><a href="#">{{ $value->Name ?? '' }}</a></h4>
-                                </div>
-                            </div>
-                        @endforeach
-                    </div><!--/cat --}}
 
 								{{-- <li class="dropdown"><a href="#">Shop<i class="fa fa-angle-down"></i></a>
                                    	 <ul role="menu" class="sub-menu">
