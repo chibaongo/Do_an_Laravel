@@ -58,6 +58,14 @@
                     </a>
                 </li>
                 <li class="nav-item">
+                    <a href="{{ route('invoice_detail.index') }}" class="nav-link {{ $table == 'invoice_detail' ? 'active' : '' }}">
+                        <i class="nav-icon fas fa-th"></i>
+                        <p>
+                            Chi tiết hoá đơn
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
                     <a href="{{ route('product.index') }}" class="nav-link {{ $table == 'product' ? 'active' : '' }}">
                         <i class="nav-icon fas fa-th"></i>
                         <p>
@@ -65,14 +73,14 @@
                         </p>
                     </a>
                 </li>
-                {{-- <li class="nav-item">
-                    <a href="{{ route('product_type.index') }}" class="nav-link {{ $table == '' ? 'active' : '' }}">
+                 <li class="nav-item">
+                    <a href="{{ route('product_type.index') }}" class="nav-link {{ $table == 'product_type' ? 'active' : '' }}">
                         <i class="nav-icon fas fa-th"></i>
                         <p>
-                            Loại ản phẩm
+                            Loại sản phẩm
                         </p>
                     </a>
-                </li> --}}
+                </li> 
             </ul>
         </nav>
         <!-- /.sidebar-menu -->
