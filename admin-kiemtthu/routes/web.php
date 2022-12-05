@@ -45,6 +45,9 @@ Route::group(['middleware' => 'AuthUserMiddleware'], function () {
     //cart
     Route::get('/cart', [HomeController::class , 'cart']);
 
+    //
+    Route::get('/detail', [HomeController::class , 'detail']);
+
     // more
     Route::get('/contact', [HomeController::class , 'contact']);
 });

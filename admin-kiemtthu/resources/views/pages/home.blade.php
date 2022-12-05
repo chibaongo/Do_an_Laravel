@@ -99,15 +99,15 @@
                                             <img src="Avatar/{{$value->Image}}" alt="" />
                                             <h2>{{$value->Price ??''}}</h2>
                                             <p>{{$value->Name ??''}}</p>
-                                            <a href="{{url("product/$value->id ")}}" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>View Detail</a>
+                                            <a href="{{url('detail')}}" class="btn btn-default add-to-cart"><i class=""></i>View Detail</a>
                                         </div>
-                                        <div class="product-overlay">
+                                        {{-- <div class="product-overlay">    {{url("product/$value->id ")}}
                                             <div class="overlay-content">
-                                                {{-- <h2>{{$value->Price ??''}}</h2>
-                                                <p>{{$value->Name ??''}}</p> --}}
+                                                <h2>{{$value->Price ??''}}</h2>
+                                                <p>{{$value->Name ??''}}</p>
                                                 <a href="{{url("product/$value->id ")}}" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>View Detail</a>
                                             </div>
-                                        </div>
+                                        </div> --}}
                                 </div>
                                 {{-- <div class="choose">
                                     <ul class="nav nav-pills nav-justified">
@@ -161,7 +161,7 @@
                                                         <img src="Avatar/{{$pd->Image}}" alt="" />
                                                         <h2>{{ $pd->Price??''}}</h2>
                                                         <p>{{ $pd->Name??''}}</p>
-                                                        <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                                                        <a href="" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
                                                     </div>
 
                                                 </div>

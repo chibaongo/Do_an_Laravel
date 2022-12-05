@@ -98,4 +98,9 @@ class HomeController extends UserDBController
         $data = [];
         return view('pages.listProduct', $data);
     }
+    public function cart($id = '')
+    {
+        $data = [];
+        return view('pages.cart', $data);
+    }
 }

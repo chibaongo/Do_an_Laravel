@@ -92,7 +92,7 @@
 
                                 @if (!empty($userLoginDetail))
                                     <li><a href="{{url('/detail-user') }}"><i class="fa fa-user"></i> {{$userLoginDetail->Username}}</a></li>
-                                    <li><a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart</a></li>
+                                    <li><a href="{{url('cart')}}"><i class="fa fa-shopping-cart"></i> Cart</a></li>
                                     {{-- <li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Contact</a></li> --}}
                                     <li><a href="{{url('logout')}}"><i class="fa fa-lock"></i> Logout</a></li>
                                 @else
