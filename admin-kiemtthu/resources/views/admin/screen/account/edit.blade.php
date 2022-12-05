@@ -52,12 +52,13 @@ $tableProperties = config('table.table');
                             <input type="email" class="form-control" id="email" name="email" placeholder="Nhập email"
                                 value="{{ isset($id) ? $data->email : '' }}">
                         </div>
-                        @isset($id)
+                        <!-- @isset($id) -->
+                         <!-- @endisset -->
                         <div class="form-group">
                             <label for="password">Mật khẩu</label>
                             <input type="password" class="form-control" id="password" name="password" placeholder="Nhập mật khẩu">
                         </div>
-                        @endisset
+                      
                         <div class="form-group">
                             <label for="Phone">Số điện thoại</label>
                             <input type="number" class="form-control" id="Phone" name="Phone" placeholder="Nhập số điện thoại"
@@ -70,7 +71,7 @@ $tableProperties = config('table.table');
                         </div>
                         <div class="form-group">
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="IsAdmin" name="IsAdmin" {{ isset($id) ? 'checked' : '' }}>
+                                <input type="checkbox" class="form-check-input" id="IsAdmin" name="IsAdmin" {{ isset($id) ? 'checked' : '0' }}>
                                 <label class="form-check-label" for="IsAdmin">Là Admin</label>
                             </div>
                         </div>

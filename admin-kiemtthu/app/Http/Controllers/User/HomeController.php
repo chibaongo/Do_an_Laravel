@@ -33,7 +33,7 @@ class HomeController extends UserDBController
             if (Auth::user()->IsAdmin == 0) {
                 return redirect(config('env_custom.user.urlDefault'));  
             }
-            return redirect(config('env_custom.admin.url'));
+            return redirect('admin/account');
         }
         return redirect('login')->with('thongbao', 'Email hoặc mật khẩu không đúng !! ');
     }

@@ -40,6 +40,7 @@ class UserOutsiteController extends UserDBController
         
         if($request->hasFile('Avatar')){
             $file = $request->file('Avatar');
+            
             $name = $file->getClientOriginalName();
             $nameKhongTrung =  date('Y_m_d_H_i_s_').$name;
             $file->move('Avatar', $nameKhongTrung);

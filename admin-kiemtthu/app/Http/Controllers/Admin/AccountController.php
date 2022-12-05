@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\AdminController;
 use App\Models\Account;
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\Hash;
 class AccountController extends AdminController
 {
     /**
@@ -52,6 +52,9 @@ class AccountController extends AdminController
         // dữ liệu
         $param = $request->all();
         $param['IsAdmin'] = $param['IsAdmin'] == "on" ? 1 : 0;
+        $param['password']=Hash::make($request->password);
+
+       
         unset($param["_token"]);
         // upload avatar
         if ($request->Avatar) {
@@ -109,6 +112,7 @@ class AccountController extends AdminController
         if (isset($param['IsAdmin'])) {
             $param['IsAdmin'] = $param['IsAdmin'] == "on" ? 1 : 0;
         }
+        $param['password']=Hash::make($request->password);
         unset($param["_token"]);
         unset($param["_method"]);
         // upload avatar
