@@ -31,7 +31,7 @@ class HomeController extends UserDBController
         $dataCheck =  $this->db->checkLogin($request->email, $request->password);
         if ($dataCheck["status"] == true) {
             if (Auth::user()->IsAdmin == 0) {
-                return redirect(config('env_custom.user.urlDefault'));
+                return redirect(config('env_custom.user.urlDefault'));  
             }
             return redirect(config('env_custom.admin.url'));
         }
@@ -48,7 +48,26 @@ class HomeController extends UserDBController
             'Address' => 'required',
             'FullName' => 'required',
             'Avatar' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:4086'
-        ]);
+        ],[
+            'FullName.required'=>'Vui lòng nhập Fullname',
+            'Username.required'=>'Vui lòng nhập Username',
+            'Username.min'=>'Username chứa ít nhất 3 ký tự',
+            'password.required'=>'Vui lòng nhập Password',
+            'password.min'=>'Password chứa ít nhất 3 ký tự',
+            'password.max'=>'Password chứa nhiều nhất 32 ký tự',
+            'passwordAgain.required'=>'Vui lòng nhập Password Again',
+            'email.required'=>'Vui lòng nhập Email',
+            'email.email'=>'Vui lòng nhập đúng định dạng Email',
+            'Phone.required'=>'Vui lòng nhập Phone',
+            'Phone.min'=>'Phone chứa ít nhất 10 số',
+            'Phone.max'=>'Phone chứa nhiều nhất 15 số',
+            'Address.required'=>'Vui lòng nhập Address',
+            'Avatar.required'=>'Vui lòng chọn avatar (jpeg,png,jpg,gif,svg)',
+            
+
+        ]
+    
+    );
         $response =  $this->db->registerUser($request);
         if ($response["status"]) {
             return back()->with('thongbao', 'Đăng ký thành công');

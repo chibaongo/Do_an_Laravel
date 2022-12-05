@@ -4,9 +4,9 @@
         <!--form-->
         <div class="container">
             <div class="row">
-                {{-- thong bao loi --}}
+                <!-- {{-- thong bao loi --}}
 
-                {{-- custom message error --}}
+                {{-- custom message error --}} -->
                 {!! messageErrors() !!}
                 <div class="col-sm-4 col-sm-offset-1">
                     <div class="login-form">

@@ -33,9 +33,11 @@ class UserOutsiteController extends UserDBController
         if(!empty($user->password)){
             $user->password = Hash::make($request->password);
         }
+        //Mặc định là user
         $user->IsAdmin = 0;   // user: 0 ; admin :1
 
         //add image
+        
         if($request->hasFile('Avatar')){
             $file = $request->file('Avatar');
             $name = $file->getClientOriginalName();
