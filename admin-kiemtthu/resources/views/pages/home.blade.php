@@ -96,12 +96,12 @@
                             <div class="product-image-wrapper">
                                 <div class="single-products">
                                         <div class="productinfo text-center">
-                                            <img src="Avatar/{{$value->Image}}" alt="" />
-                                            <h2>{{$value->Price ??''}}</h2>
+                                            <img src="Avatar/{{$value->Image}}" width="300" height="300"/>
+                                            <h2>{{$value->Price ??''}} VNĐ</h2>
                                             <p>{{$value->Name ??''}}</p>
                                             <a href="{{url('detail')}}" class="btn btn-default add-to-cart"><i class=""></i>View Detail</a>
                                         </div>
-                                        {{-- <div class="product-overlay">    {{url("product/$value->id ")}}
+                                        {{-- <div class="product-overlay">    
                                             <div class="overlay-content">
                                                 <h2>{{$value->Price ??''}}</h2>
                                                 <p>{{$value->Name ??''}}</p>
@@ -158,8 +158,8 @@
                                             <div class="product-image-wrapper">
                                                 <div class="single-products">
                                                     <div class="productinfo text-center">
-                                                        <img src="Avatar/{{$pd->Image}}" alt="" />
-                                                        <h2>{{ $pd->Price??''}}</h2>
+                                                        <img src="Avatar/{{$pd->Image}}" width="200" height="200" alt="" />
+                                                        <h2>{{ $pd->Price??''}} VNĐ</h2>
                                                         <p>{{ $pd->Name??''}}</p>
                                                         <a href="" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
                                                     </div>
@@ -180,7 +180,7 @@
                                                 <div class="single-products">
                                                     <div class="productinfo text-center">
                                                         <img src="Avatar/{{$pd->Image}}" alt="" />
-                                                        <h2>{{ $pd->Price??''}}</h2>
+                                                        <h2>{{ $pd->Price??''}} VNĐ</h2>
                                                         <p>{{ $pd->Name??''}}</p>
                                                         <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
                                                     </div>

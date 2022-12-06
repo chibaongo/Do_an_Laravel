@@ -27,7 +27,7 @@ $tableProperties = config('table.table');
         <section class="content">
             <div class="card card-primary">
                 <div class="card-header">
-                    <h3 class="card-title">Account</h3>
+                    <h3 class="card-title">Giỏ hàng</h3>
                 </div>
                 <!-- /.card-header -->
                 <!-- form start -->

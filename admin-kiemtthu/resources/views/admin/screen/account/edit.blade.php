@@ -71,7 +71,7 @@ $tableProperties = config('table.table');
                         </div>
                         <div class="form-group">
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="IsAdmin" name="IsAdmin" {{ isset($id) ? 'checked' : '0' }}>
+                                <input type="checkbox" class="form-check-input" id="IsAdmin" name="IsAdmin" {{ isset($id) ? 'checked' : 'checked' }}>
                                 <label class="form-check-label" for="IsAdmin">Là Admin</label>
                             </div>
                         </div>

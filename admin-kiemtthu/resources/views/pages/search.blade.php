@@ -20,15 +20,15 @@
                                                 class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>View
                                                 Detail</a>
                                         </div>
-                                        <div class="product-overlay">
+                                        {{-- <div class="product-overlay">
                                             <div class="overlay-content">
-                                                {{-- <h2>{{ $value->Price ?? '' }}</h2>
-                                                <p>{{ $value->Name ?? '' }}</p> --}}
+                                                <h2>{{ $value->Price ?? '' }}</h2>
+                                                <p>{{ $value->Name ?? '' }}</p>
                                                 <a href="{{ url("product/$value->id ") }}"
                                                     class="btn btn-default add-to-cart"><i
                                                         class="fa fa-shopping-cart"></i>View Detail</a>
                                             </div>
-                                        </div>
+                                        </div> --}}
                                     </div>
                                     {{-- <div class="choose">
                                         <ul class="nav nav-pills nav-justified">

@@ -54,7 +54,7 @@ $tableProperties = config('table.table');
                         </div>
                         <div class="form-group">
                             <label for="Stock">Tồn kho</label>
-                            <input type="number" min=0 max="100" step="1" class="form-control" id="Stock" name="Stock" placeholder="Nhập số Giảm Giá %"
+                            <input type="number" min=0 max="100" step="1" class="form-control" id="Stock" name="Stock" placeholder="Nhập số lượng tồn kho"
                                 value="{{ isset($id) ? $data->Stock : '' }}">
                         </div>
                         <div class="form-group">

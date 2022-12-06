@@ -9,14 +9,14 @@
     <!-- Sidebar -->
     <div class="sidebar">
         <!-- Sidebar user panel (optional) -->
-        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        {{-- <div class="user-panel mt-3 pb-3 mb-3 d-flex">
             <div class="image">
                 <img src="admin/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
             </div>
             <div class="info">
                 <a href="#" class="d-block">Alexander Pierce</a>
             </div>
-        </div>
+        </div> --}}
 
         <!-- SidebarSearch Form -->
         <div class="form-inline">
@@ -57,14 +57,14 @@
                         </p>
                     </a>
                 </li>
-                <li class="nav-item">
+                {{-- <li class="nav-item">
                     <a href="{{ route('invoice_detail.index') }}" class="nav-link {{ $table == 'invoice_detail' ? 'active' : '' }}">
                         <i class="nav-icon fas fa-th"></i>
                         <p>
                             Chi tiết hoá đơn
                         </p>
                     </a>
-                </li>
+                </li> --}}
                 <li class="nav-item">
                     <a href="{{ route('product.index') }}" class="nav-link {{ $table == 'product' ? 'active' : '' }}">
                         <i class="nav-icon fas fa-th"></i>
