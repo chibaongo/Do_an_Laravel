@@ -18,8 +18,8 @@ class Product extends ModelDB
         'Stock',
         'ProductTypeId',
         'Image',
-        'Image1',
-        'Image2'
+        // 'Image1',
+        // 'Image2'
     ];
     protected $table = "products";
 
